@@ -154,13 +154,19 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .main {
-    height: 100vh;
+    width: 1360px;
+    height: 670px;
     background: linear-gradient(
         to right, 
         #F6F7FC 0%, 60%,
         #00C6FF 0%, 
         #0072FF 100%);
     padding-top: 106px;
+    margin: auto;
+}
+
+.process-screen {
+    margin-bottom: 26px;
 }
 
 .process-screen-content {
@@ -183,9 +189,7 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #29375A;
     font-weight: 400;
     margin-bottom: 35px;
-    /* text-align: center; */
 }
-
 
 .actoin-form .form-control {
     width: 380px;
@@ -207,4 +211,46 @@ p, h1, h2, h3, h4, h5, h6 {
     background: url(../img/Arrow\ 1.svg) no-repeat;
     background-size: contain;
     margin-left: 10px;
+}
+
+.process-steps {
+    max-width: 237px;
+    margin-left: 48px;
+}
+
+.process-steps-title {
+    font-size: 1.7rem;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.text-green {
+    color: #27DEBF;
+}
+
+.footer {
+    max-width: 1084px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.info-block {
+    margin-left: 20px;
+}
+
+.info-block-text{
+    color: rgba(41, 55, 90, 0.7);
+    margin-bottom: 5px;
+}
+
+.info-block-text,
+.info-block-procent {
+   font-size: 0.85rem; 
+}
+
+.info-block-procent {
+    font-weight: 700;
+    color: #29375A;
 }
