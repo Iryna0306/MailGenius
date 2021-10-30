@@ -232,10 +232,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .process-steps-list {
     color: #fff;
+    margin-bottom: 28px;
 }
 
 .steps-list-item {
     position: relative;
+}
+
+.steps-list-item:nth-child(1) {
     margin-bottom: 22px;
 }
 
@@ -249,10 +253,8 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 40px;
     line-height: 40px;
     border-radius: 50%;
-    cursor: pointer;
     margin-top: 4px;
     text-align: center;
-    
 }
 
 .active {
