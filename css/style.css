@@ -156,7 +156,7 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 670px;
     background: linear-gradient(
         to right, 
-        #F6F7FC 0%, 60%,
+        #F6F7FC 0%, 55%,
         #00C6FF 0%, 
         #0072FF 100%);
     padding-top: 106px;
@@ -258,6 +258,11 @@ p, h1, h2, h3, h4, h5, h6 {
 .active {
     color: #fff;
     background-color: #27DEBF;
+}
+
+.success {
+    color: transparent;
+    background: #BBC4DA, url(../img/check.svg);
 }
 
 .list-item-title {
