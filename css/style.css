@@ -234,10 +234,48 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+.steps-list-item {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.list-item-num {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: -68px;
+    color: #BBC4DA;
+    background-color: #F6F7FC;;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 4px;
+    text-align: center;
+    
+}
+
+.active {
+    color: #fff;
+    background-color: #27DEBF;
+}
+
 .list-item-title {
     font-size: 18px;
     line-height: 1.333;
     font-weight: 700;
+}
+
+.list-item-desc {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.optional-text {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.43;
+    max-width: 150px;
 }
 
 .footer {
