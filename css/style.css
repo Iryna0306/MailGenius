@@ -233,6 +233,18 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 28px;
 }
 
+.process-screen-text {
+    line-height: 1.71;
+    text-align: center;
+    color: #29375A;
+    max-width: 337px;
+}
+
+.color-text {
+    color: #29375A;
+    font-weight: 700;
+}
+
 .steps-list-item {
     position: relative;
 }
@@ -262,8 +274,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .success {
     color: transparent;
-    background: #BBC4DA, url(../img/check.svg);
+    background-image:  #BBC4DA !important;
 }
+
+/* url(../img/check.svg) */
 
 .list-item-title {
     font-size: 18px;
