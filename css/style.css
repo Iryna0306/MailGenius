@@ -179,8 +179,14 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
     width: 70px;
     /* margin: 30px auto; */
-
 }
+
+.logo-results::after {
+    content: url(/img/100.svg);
+    position: absolute;
+    margin-left: 5px; 
+}
+
 
 .process-title {
     font-size: 2.57rem;
@@ -240,7 +246,7 @@ p, h1, h2, h3, h4, h5, h6 {
     max-width: 337px;
 }
 
-.process-steps-result {
+.process-steps-results {
     position: fixed;
     margin-top: 30px;
     margin-left: 850px; 
@@ -252,7 +258,27 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
-.steps-list-item-result {
+.logo-results-navigation {
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+.navigation-text-results {
+    font-size: 12px;
+    line-height: 1.16;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 5px;
+}
+
+.navigation-procent-results {
+    font-size: 12px;
+    line-height: 1.16;
+    font-weight: 700;
+    color: #27DEBF;
+}
+
+
+.steps-list-item-results {
     line-height: 1.71;
     font-weight: 700;
 
