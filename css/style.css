@@ -316,9 +316,11 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: #27DEBF;
 }
 
-.success {
+.item-num.success .list-item-num{
     color: transparent;
-    background-image:  #BBC4DA !important;
+    background:  #F6F7FC url(/img/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* url(../img/check.svg) */
