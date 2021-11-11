@@ -34,6 +34,10 @@ input, textarea {
     outline: none;
 }
 
+input {
+    display: none;
+}
+
 textarea {
     resize: vertical;
 }
@@ -230,6 +234,8 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
 }
 
+
+
 .text-green {
     color: #27DEBF;
 }
@@ -237,6 +243,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .process-steps-list {
     color: #fff;
     margin-bottom: 28px;
+    counter-reset: list;
 }
 
 .process-screen-text {
@@ -268,44 +275,45 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
   }
   
-  .content-1,
-  .content-2,
-  .content-3 {
+.content-1,
+.content-2,
+.content-3 {
     text-align: center;
+    color: #29375A;
     justify-content: space-around;
     background-color: #fff;
     border: 1px solid #BBC4DA;
     height: 30px;
-    line-height: 30px;
-  }
+    line-height: 26px;
+}
+
+.fas {
+    margin-right: 5px;
+}
   
-  .content-1 {
+.content-1 {
     border-radius: 4px 0px 0px 4px;
     width: 152px;
-  }
+}
   
-  .content-2 {
+.content-2 {
     width: 164px;
-  }
+}
   
-  .content-3 {
+.content-3 {
     border-radius: 0px 4px 4px 0px;
     width: 152px;
-  }
-  
-  input {
-    display: none;
-  }
-  
-  .active-content {
+}
+   
+.active-content {
     text-align: center;
     justify-content: space-around;
     color: #fff;
     background-color: #01BFFF;
     border: 1px solid #01BFFF;
     height: 30px;
-    line-height: 30px;
-  }
+    line-height: 26px;
+}
 
 .navigation-text-results {
     font-size: 12px;
@@ -325,7 +333,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .steps-list-item-results {
     line-height: 1.71;
     font-weight: 700;
-
 }
 
 .color-text {
@@ -337,6 +344,37 @@ p, h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
+.item-num {
+    position: relative;
+}
+
+.item-num::before {
+    counter-increment: list;
+    content:counter(list);
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    color: #BBC4DA;
+    background-color: #F6F7FC;
+    left: -68px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 4px;
+}
+
+.item-num.success::before {
+    content: '';
+    background:  #F6F7FC url(/img/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+}
 .steps-list-item:nth-child(1) {
     margin-bottom: 22px;
 }
@@ -347,7 +385,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin-left: -68px;
     color: #BBC4DA;
-    background-color: #F6F7FC;;
+    background-color: #F6F7FC;
     width: 40px;
     line-height: 40px;
     border-radius: 50%;
