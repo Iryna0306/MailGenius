@@ -315,6 +315,13 @@ p, h1, h2, h3, h4, h5, h6 {
     line-height: 26px;
 }
 
+.meta-results {
+    max-width: 418px;
+    margin: 0;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
 .navigation-text-results {
     font-size: 12px;
     line-height: 1.16;
@@ -350,7 +357,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .item-num::before {
     counter-increment: list;
-    content:counter(list);
+    content: counter(list);
     position: absolute;
     font-size: 20px;
     font-weight: 700;
@@ -362,7 +369,7 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .item-num.success::before {
@@ -375,11 +382,26 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     position: absolute;
 }
+
+.item-num.active::before {
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    background:  #20E3B2;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;    
+}
+
 .steps-list-item:nth-child(1) {
     margin-bottom: 22px;
 }
 
-.list-item-num {
+/* .list-item-num {
     position: absolute;
     font-size: 20px;
     font-weight: 700;
@@ -402,7 +424,7 @@ p, h1, h2, h3, h4, h5, h6 {
     color: transparent;
     background:  #F6F7FC url(/img/check.svg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 /* url(../img/check.svg) */
