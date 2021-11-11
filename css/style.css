@@ -263,6 +263,50 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 18px;
 }
 
+.wrapper {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .content-1,
+  .content-2,
+  .content-3 {
+    text-align: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border: 1px solid #BBC4DA;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  .content-1 {
+    border-radius: 4px 0px 0px 4px;
+    width: 152px;
+  }
+  
+  .content-2 {
+    width: 164px;
+  }
+  
+  .content-3 {
+    border-radius: 0px 4px 4px 0px;
+    width: 152px;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  .active-content {
+    text-align: center;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #01BFFF;
+    border: 1px solid #01BFFF;
+    height: 30px;
+    line-height: 30px;
+  }
+
 .navigation-text-results {
     font-size: 12px;
     line-height: 1.16;
